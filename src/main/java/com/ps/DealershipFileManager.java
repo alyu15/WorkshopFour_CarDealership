@@ -68,7 +68,7 @@ public class DealershipFileManager {
                 int vehicleOdometer = vehicle.getOdometer();
                 double vehiclePrice = vehicle.getPrice();
 
-                String vehicleData = String.format("%d|%d|%s|%s|%s|%s|%d|%f\n",
+                String vehicleData = String.format("%d|%d|%s|%s|%s|%s|%d|%.2f\n",
                         vehicleVin, vehicleYear, vehicleMake, vehicleModel,
                         vehicleType, vehicleColor, vehicleOdometer, vehiclePrice
                 );

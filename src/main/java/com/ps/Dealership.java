@@ -1,6 +1,5 @@
 package com.ps;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Dealership {
