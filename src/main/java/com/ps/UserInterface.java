@@ -1,6 +1,5 @@
 package com.ps;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -298,7 +297,33 @@ public class UserInterface {
     public static void handleRemoveVehicle() {
 
         System.out.println("\n====================================== Remove a Vehicle ======================================");
+        System.out.println("* Please enter the VIN of the vehicle you would like to remove:");
+            int removeVehicleVin;
+            while (true) {
+                if (scanner.hasNextInt()) {
+                    removeVehicleVin = scanner.nextInt();
+                    break;
+                } else {
+                    System.out.println("Please enter a number.");
+                    scanner.next();
+                }
+            }
 
+        Vehicle vehicleToRemove = null;
+        for (Vehicle vehicle : dealership.getAllVehicles()) {
+            if (vehicle.getVin() == removeVehicleVin) {
+                vehicleToRemove = vehicle;
+                break;
+            }
+        }
+        if (vehicleToRemove == null) {
+            System.out.println("************************** No vehicle found with the provided VIN **************************");
+            return;
+        }
+        dealership.removeVehicle(vehicleToRemove);
+        DealershipFileManager.saveDealership(dealership);
+
+        System.out.println("\n************************** Vehicle successfully removed! ***************************");
     }
 
 }
