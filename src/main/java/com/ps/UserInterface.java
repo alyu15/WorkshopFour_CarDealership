@@ -19,7 +19,7 @@ public class UserInterface {
         init();
 
         System.out.println("\n********************** Welcome to the World Famous Car Dealership Application! **********************");
-        System.out.println("                             --  How may we help you?  --");
+        System.out.println("                                   --  How may we help you?  --");
         System.out.println("*****************************************************************************************************");
 
         processMainMenu();
@@ -83,8 +83,8 @@ public class UserInterface {
                     break;
 
                 case "99":
-                    System.out.println("********************  Exiting program... ********************");
-                    System.out.println("                   --  Have a nice day!  --");
+                    System.out.println("***************************************  Exiting program... ***************************************");
+                    System.out.println("                                     --  Have a nice day!  --");
                     break;
 
                 default:
