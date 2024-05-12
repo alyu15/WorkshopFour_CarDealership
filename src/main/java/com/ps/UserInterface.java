@@ -37,11 +37,11 @@ public class UserInterface {
                 System.out.println("~ (3) View Vehicles by Year");
                 System.out.println("~ (4) View Vehicles by Color");
                 System.out.println("~ (5) View Vehicles by Mileage");
-                System.out.println("~ (6) View Vehicles by Type");
-                System.out.println("~ (7) View all Vehicles\n");
+                System.out.println("~ (6) View Vehicles by Type\n");
+                System.out.println("~ (7) View all Vehicles");
                 System.out.println("~ (8) Add a Vehicle");
                 System.out.println("~ (9) Remove a Vehicle\n");
-                System.out.println("~ (0) Exit");
+                System.out.println("~ (99) Exit");
 
             mainMenuInput = scanner.next();
 
@@ -82,7 +82,7 @@ public class UserInterface {
                     processRemoveVehicleRequest();
                     break;
 
-                case "0":
+                case "99":
                     System.out.println("********************  Exiting program... ********************");
                     System.out.println("                   --  Have a nice day!  --");
                     break;
@@ -93,7 +93,7 @@ public class UserInterface {
                     break;
             }
 
-        } while (!mainMenuInput.equals("0"));
+        } while (!mainMenuInput.equals("99"));
     }
 
     private static void displayVehicles(ArrayList<Vehicle> vehicles) {
