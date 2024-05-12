@@ -26,7 +26,7 @@ from the Home Screen or to simply exit the application.
 ><details>
 ><summary> Home Screen </summary>
 >
-> ![HomeScreen](https://github.com/alyu15/WorkshopFour_CarDealership/blob/7ebdbb6f6f3bc52754ba5135c97ff4f1133409b4/Images/HomeScreen.PNG)
+> ![HomeScreen](https://github.com/alyu15/WorkshopFour_CarDealership/blob/29fcce25df5a60c220faf697994515a0a1e329f9/Images/NewHomeScreen.PNG)
 > 
 ></details>
 
@@ -256,3 +256,7 @@ except it ensures that the user input is an int/double and prevents the same wri
 > ![Error5](https://github.com/alyu15/WorkshopFour_CarDealership/blob/7ebdbb6f6f3bc52754ba5135c97ff4f1133409b4/Images/ErrorHandle5.PNG)
 >
 ></details>
+
+### Thank you for taking the time to check out my application!
+
+![Ending](https://github.com/alyu15/WorkshopFour_CarDealership/blob/29fcce25df5a60c220faf697994515a0a1e329f9/Images/Exit.PNG)
